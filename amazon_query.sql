@@ -9,6 +9,7 @@ CREATE TABLE amazon (
     discount_percentage INT,
     rating VARCHAR(10),
     rating_count FLOAT,
+    user_id VARCHAR(50),
     review_id TEXT,
     review_title TEXT,
     review_content TEXT
@@ -41,7 +42,7 @@ select distinct category,count(product_id) as num_of_products from amazon
 group by category
 order by num_of_products desc;
 
---BUSINESS PROBLEMS AND INSIGHTS
+--BUSINESS PROBLEMS
 --7.What are the average actual and discounted prices per category?
 select category,
 round(avg(actual_price)::integer,2)as avg_actual_price,
@@ -93,7 +94,7 @@ order by max_discount desc
 limit 5
 
 --14.Which users have submitted the most reviews, and which categories are they reviewing?
-select review_id as user_id,category,count(review_content)as total_review from amazon
+select user_id,category,count(review_content)as total_review from amazon
 group by user_id,category
 order by total_review desc
 
@@ -142,11 +143,11 @@ group by category,rating_count
 order by rating_count desc
 
 --20.Which user demographics (based on user activity like reviews submitted) are most influential in specific categories?
-select  category, review_id,
+select  category, user_id,
         count(review_id) as reviews_submitted,
         avg(cast(rating as FLOAT)) as avg_rating_given
    from amazon
-   group by category, review_id
+   group by category, user_id
    order by reviews_submitted DESC, avg_rating_given DESC;
 
 --21.How does the number of reviews (rating_count) relate to the actual conversion rate (proxy through product popularity)?
