@@ -3,6 +3,7 @@
 ## Project Overview
 
 This project focuses on analyzing and extracting valuable insights from an Amazon dataset. The dataset primarily deals with e-commerce product data, including attributes such as product details, pricing, discounts, ratings, and customer reviews. The goal is to perform exploratory data analysis (EDA), visualize key trends, and derive actionable insights. This project is designed to demonstrate data analysis, preprocessing, and querying skills, making it a valuable addition to your data science portfolio.
+In addition to the data analysis, this project includes the development of an interactive dashboard with a user-friendly interface. The dashboard enables stakeholders to explore the dataset dynamically using slicers for filtering by discount percentages and ratings. Key metrics and visualizations are presented in an intuitive manner, making it easy to identify trends, correlations, and actionable business insights. This feature highlights proficiency in creating analytical tools that enhance data-driven decision-making.
 
 ![amazon logo](https://github.com/user-attachments/assets/8fa7a9a3-96a2-4904-80d6-34e2cd2e8616)
 ---
@@ -39,6 +40,41 @@ This project involves:
    - Investigating product ratings and reviews.
 4. **Data Visualization**:
    - Visualizing discounts, ratings, and other key metrics.
+
+## **Dashboard Overview**
+
+The interactive dashboard provides a comprehensive overview of the analysis, enabling stakeholders to explore data interactively.
+
+### **Slicers:**
+- **Discount Percentage Range:** 
+  - Adjustable slider to filter products by discounts (e.g., 35% to 94%).
+- **Rating Range:** 
+  - Adjustable slider to filter products by average ratings (e.g., 2.36 to 5.0).
+
+### **Key Visualizations:**
+
+#### **1. Discount Percentage vs. Rating (Histogram):**
+- Displays the distribution of discounts across various rating ranges.
+- Highlights weak correlation between discount percentages and product ratings.
+
+#### **2. Product Distribution by Category (Treemap):**
+- Illustrates the proportion of products across different categories.
+- Shows the dominance of Electronics and Home-related items.
+
+#### **3. Top-Rated Products (Bar Chart):**
+- Lists the highest-rated products alongside their average ratings.
+- Useful for identifying potential marketing opportunities.
+
+#### **4. Discounted vs. Actual Price (Bar Chart):**
+- Compares original prices and discounted prices.
+- Highlights significant deals and pricing strategies.
+
+#### **5. Average Rating vs. Product ID (Bar Chart):**
+- Displays average ratings for specific products.
+- Helps identify consistently high-performing products.
+
+
+     
 ![Screenshot 2025-01-02 185110](https://github.com/user-attachments/assets/ca0aa6ae-cca3-4de0-84b7-2c10534737a5)
 
 ---
