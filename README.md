@@ -39,6 +39,7 @@ This project involves:
    - Investigating product ratings and reviews.
 4. **Data Visualization**:
    - Visualizing discounts, ratings, and other key metrics.
+![Screenshot 2025-01-02 185110](https://github.com/user-attachments/assets/ca0aa6ae-cca3-4de0-84b7-2c10534737a5)
 
 ---
 
